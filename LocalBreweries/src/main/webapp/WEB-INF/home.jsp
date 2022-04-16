@@ -12,7 +12,32 @@
 
 <h1>Local Breweries</h1>
 
-${DEBUG}
+
+
+
+
+	<table>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Brewery Name</th>
+			</tr>
+		</thead>
+		<tbody>
+			<c:forEach var="b" items="${brewery}">
+				<tr>
+					<td>${b.id }</td>
+					<td><a href="getBrewery.do?Id=${b.id}">${b.name}</a></td>
+				</tr>
+			</c:forEach>
+
+
+
+		</tbody>
+	</table>
+
+
+
 
 
 </body>
