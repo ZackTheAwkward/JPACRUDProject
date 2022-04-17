@@ -5,12 +5,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Add Brewery</title>
+<title>Add a Brewery</title>
 </head>
 <body>
 
 
-	<form action="addBrewery.do" method="POST">
+	<form action="addBrewery.do" method="post">
 	
 	<h1>Add a Brewery</h1>
 	

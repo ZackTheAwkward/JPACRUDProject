@@ -32,7 +32,7 @@ public class BreweryDaoJpaImpl implements BreweryDAO {
 	@Override
 	public Brewery addBrewery(Brewery brewery) {
 		em.persist(brewery);
-		return brewery;
+		return em.find(Brewery.class, brewery.getId());
 	}
 
 	@Override
