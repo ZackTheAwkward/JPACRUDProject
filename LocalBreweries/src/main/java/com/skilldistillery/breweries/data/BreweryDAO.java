@@ -5,6 +5,10 @@ import java.util.List;
 import com.skilldistillery.breweries.entities.Brewery;
 
 public interface BreweryDAO {
-	Brewery findById(int breweryId);
-	List<Brewery> findAll();
+	public Brewery findById(int breweryId);
+	public List<Brewery> findAll();
+	public Brewery addBrewery(Brewery brewery);
+	public Brewery updateBrewery(int id, Brewery brewery);
+	public boolean deleteBrewery(int id);
+	
 }

@@ -11,7 +11,7 @@
 <h1>Brewery Details</h1>
 
 	<div>
-		<h5>${brewery.name}</h5>
+		<h5><a href ="${brewery.url}" target="_blank">${brewery.name}</a></h5>
 	<p>${brewery.city}, ${brewery.state}</p>
 	<p>${brewery.latitude} ${brewery.longitude}</p>
 	</div>

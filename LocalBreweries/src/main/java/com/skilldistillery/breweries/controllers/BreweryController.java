@@ -5,7 +5,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.skilldistillery.breweries.data.BreweryDAO;
 import com.skilldistillery.breweries.entities.Brewery;
@@ -28,5 +30,9 @@ public class BreweryController {
 		model.addAttribute("brewery", brewery);
 		return "brewery/show";
 	}
-	
+	@RequestMapping(path ="/addBrewery.do")
+	public String addBrewery(Model model) {
+		model.addAttribute("brewery", new Brewery());
+		return "brewery/added";
+	}
 }

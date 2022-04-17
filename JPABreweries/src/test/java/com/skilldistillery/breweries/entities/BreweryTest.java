@@ -46,5 +46,9 @@ class BreweryTest {
 		
 		
 	}
-
+	@Test
+	void test_Brewery_add() {
+		assertNotNull(brewery);
+		
+	}
 }

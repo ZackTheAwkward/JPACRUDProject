@@ -13,6 +13,13 @@
 <h1>Local Breweries</h1>
 
 
+<a href="added.jsp" class="starter">Add Brewery to List</a>
+
+
+	<form action="getBrewery.do" method="GET">
+		Brewery ID: <input type="text" name="Id" /> <input type="submit"
+			value="Show Brewery" />
+	</form>
 
 
 

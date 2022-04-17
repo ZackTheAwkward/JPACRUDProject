@@ -92,6 +92,17 @@ public class Brewery {
 		return "Brewery ID: " + id + " Name: " + name + " City: " + city + " State: " + state + " URL: " + url
 				+ " Latitude: " + latitude + " Longitude: " + longitude;
 	}
+
+	public Brewery(int id, String name, String city, String state, String url, double latitude, double longitude) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.city = city;
+		this.state = state;
+		this.url = url;
+		this.latitude = latitude;
+		this.longitude = longitude;
+	}
 	
 	
 	
