@@ -13,7 +13,17 @@
 <h1>Local Breweries</h1>
 
 
-<a href="added.jsp" class="starter">Add Brewery to List</a>
+<a href="addBrewery.do">Add Brewery to List</a>
+<a href="updateBrewery.do">Update a Brewery</a>
+<a href="deleteBrewery.do">Delete a Brewery from the List</a>
+<a href="searchBrewery.do">Search for a Brewery by ID</a>
+
+
+
+
+
+
+
 
 
 	<form action="getBrewery.do" method="GET">

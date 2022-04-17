@@ -21,12 +21,6 @@ public class Brewery {
 	private double longitude;
 
 	
-	
-	
-	
-	
-	
-	
 	public Brewery() {
 		super();
 	}

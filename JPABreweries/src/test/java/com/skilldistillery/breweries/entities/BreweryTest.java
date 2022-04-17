@@ -30,7 +30,7 @@ class BreweryTest {
 	@BeforeEach
 	void setUp() throws Exception {
 		em = emf.createEntityManager();
-		brewery = em.find(Brewery.class, 1);
+		brewery = em.find(Brewery.class, 6);
 	}
 
 	@AfterEach
@@ -48,7 +48,11 @@ class BreweryTest {
 	}
 	@Test
 	void test_Brewery_add() {
+		Brewery brewery = new Brewery();
 		assertNotNull(brewery);
+		assertEquals("brewery", brewery.getName());
+		assertEquals("Denver", brewery.getCity());
+		assertEquals("Colorado", brewery.getState());
 		
 	}
 }
