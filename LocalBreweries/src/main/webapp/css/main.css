@@ -1,2 +1,84 @@
 @charset "UTF-8";
 
+h1 {
+	color: white;
+	text-align: center;
+	position: absolute;
+	top: 10%;
+}
+
+body {
+	background-image: url("../images/websitebackground.jpeg");
+	background-size: cover;
+}
+
+a {
+	color: white;
+}
+
+.nav {
+	background-color: transparent;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.nav a {
+	color: white;
+	text-align: center;
+	float: left;
+	display: block;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.main {
+	margin-top: 30px;
+}
+
+th {
+	color: white;
+}
+
+td {
+	color: white;
+}
+
+.table {
+	position: absolute;
+	top:15%;
+}
+#map {
+	position: absolute;
+	top: 35%;
+}
+h5 {
+	color: white;
+	text-align: center;
+	position: absolute;
+	top: 20%;
+}
+.details {
+	color:white;
+}
+h6 {
+	color: white;
+	text-align: center;
+	position: absolute;
+	top: 25%;
+}
+.table2{
+	position: absolute;
+	top:25%;
+}
+p {
+	color: white;
+	
+}
+
+.delete {
+	position: absolute;
+	color: white;
+	top: 20%;
+}

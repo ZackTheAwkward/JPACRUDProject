@@ -6,30 +6,49 @@
 <head>
 <meta charset="UTF-8">
 <title>Add a Brewery</title>
+<jsp:include page="brewerybootstrap.jsp" />
 </head>
 <body>
 
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="home.do">Local Breweries</a>
+          </div>
+      
+    <ul class="navbar-nav ms-auto align-items-center">
+      <li class="active"><a class="nav-link mx-2" href="home.do">Home</a></li>
+	<li class="nav-item"><a class="nav-link mx-2" href="add.do">Add Brewery to List</a></li>
+	<li class="nav-item"><a class="nav-link mx-2" href="update.do">Update a Brewery</a></li>
+	<li class="nav-item"><a class="nav-link mx-2" href="delete.do">Delete a Brewery from the List</a></li>
+	<li class="nav-item"><a class="nav-link mx-2" href="search.do">Search for a Brewery by ID</a></li>
+	</ul>
+</div>
+</nav>
 
-	<form action="addBrewery.do" method="post">
-	
 	<h1>Add a Brewery</h1>
+	<form action="addBrewery.do" method="post">
+	<div class="table">
+	<input class="form-control-sm" type="text" name="name" placeholder="Name"/>
+	<br>
 	
-	Name: <input type="text" name="name"/>
+	<input class="form-control-sm" type="text" name="city" placeholder="City"/>
 	<br>
-	City: <input type="text" name="city"/>
-	<br>
-	State: <input type="text" name="state"/>
-	<br>
-	URL: <input type="text" name="url"/>
-	<br>
-	Latitude: <input type="text" name="latitude"/>
-	<br>
-	Longitude: <input type="text" name="longitude"/>
 	
+	<input class="form-control-sm" type="text" name="state" placeholder="State"/>
+	<br>
+	
+	<input class="form-control-sm" type="text" name="url" placeholder="Website URL"/>
+	<br>
+	
+	<input class="form-control-sm" type="text" name="latitude" placeholder="Latitude"/>
+	<br>
+	
+	<input class="form-control-sm" type="text" name="longitude" placeholder="Longitude"/>
+	<br>
 	<input type ="submit" value="sumbit"/>
-
+	</div>
 	</form>
-
 
 
 </body>

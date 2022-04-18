@@ -6,8 +6,26 @@
 <head>
 <meta charset="UTF-8">
 <title>Update a Brewery</title>
+<jsp:include page="brewerybootstrap.jsp" />
+
 </head>
 <body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="home.do">Local Breweries</a>
+          </div>
+      
+    <ul class="navbar-nav ms-auto align-items-center">
+      <li class="active"><a class="nav-link mx-2" href="home.do">Home</a></li>
+	<li class="nav-item"><a class="nav-link mx-2" href="add.do">Add Brewery to List</a></li>
+	<li class="nav-item"><a class="nav-link mx-2" href="update.do">Update a Brewery</a></li>
+	<li class="nav-item"><a class="nav-link mx-2" href="delete.do">Delete a Brewery from the List</a></li>
+	<li class="nav-item"><a class="nav-link mx-2" href="search.do">Search for a Brewery by ID</a></li>
+	</ul>
+</div>
+</nav>
 
 <h1>Update a Brewery</h1>
 
@@ -15,28 +33,34 @@
 <c:when test="${! empty brewery}">
 
 <form action="updateBrewery.do" method="POST">
+<h5>Update any of the fields for the Brewery:</h5>
 
-Update any of the fields for the Brewery:
-
-<br>
-
+<div class="table2">
 <input type="hidden" name="id" value="${brewery.id}"/>
-Name: <input type="text" name="name" value="${brewery.name}"/>
+<p>Name:	<input class="form-control-sm" type="text" name="name" value="${brewery.name}"/></p>
 <br>
-City: <input type="text" name="city" value="${brewery.city}"/>
-State: <input type="text" name="state" value="${brewery.state}"/>
-URL: <input type="text" name="url" value="${brewery.url}"/>
-Latitude: <input type="text" name="latitude" value="${brewery.latitude}"/>
-Longitude: <input type="text" name="longitude" value="${brewery.longitude}"/>
+<p>City:	<input class="form-control-sm" type="text" name="city" value="${brewery.city}"/></p>
+<br>
+<p>State:	<input class="form-control-sm" type="text" name="state" value="${brewery.state}"/></p>
+<br>
+<p>URL:	<input class="form-control-sm" type="text" name="url" value="${brewery.url}"/></p>
+<br>
+<p>Latitude:	<input class="form-control-sm" type="text" name="latitude" value="${brewery.latitude}"/></p>
+<br>
+<p>Longitude:	<input class="form-control-sm" type="text" name="longitude" value="${brewery.longitude}"/></p>
+<br>
 <input type="submit" value="submit"/>
-
+<br>
+</div>
 
 </form>
 </c:when>
 <c:otherwise>
-Brewery does not exist
+<div class="delete">
+<p>Brewery does not exist</p>
 <br>
-Please try again
+<p>Please try again</p>
+</div>
 </c:otherwise>
 
 
