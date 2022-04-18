@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Brewery Details</title>
-<jsp:include page="brewerybootstrap.jsp" />
+<jsp:include page="bootstrap.jsp" />
 
 </head>
 <body>

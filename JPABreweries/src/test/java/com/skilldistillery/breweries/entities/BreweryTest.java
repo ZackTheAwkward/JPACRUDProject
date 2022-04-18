@@ -30,7 +30,7 @@ class BreweryTest {
 	@BeforeEach
 	void setUp() throws Exception {
 		em = emf.createEntityManager();
-		brewery = em.find(Brewery.class, 6);
+		brewery = em.find(Brewery.class, 1);
 	}
 
 	@AfterEach
@@ -43,16 +43,11 @@ class BreweryTest {
 	void test_Brewery_entity_mapping() {
 		assertNotNull(brewery);
 		assertEquals("Spice Trade Brewing", brewery.getName());
-		
-		
-	}
-	@Test
-	void test_Brewery_add() {
-		Brewery brewery = new Brewery();
-		assertNotNull(brewery);
-		assertEquals("brewery", brewery.getName());
-		assertEquals("Denver", brewery.getCity());
+		assertEquals("Greenwood Village", brewery.getCity());
 		assertEquals("Colorado", brewery.getState());
+		assertEquals("https://spicetradebrewing.com/", brewery.getUrl());
+		assertEquals(39.610052, brewery.getLatitude());
+		assertEquals(-104.887758, brewery.getLongitude());
 		
 	}
 }
