@@ -22,7 +22,11 @@
 				<li>Longitude: ${brewery.longitude}</li>
 			</ul>
 		</c:when>
+<form action="updated.do" method="GET">
+	<input type="hidden" name="id" value="${brewery.id}">
+	<input type="submit" name="submit" value="Update Brewery">
 
+</form>
 
 
 	</c:choose>

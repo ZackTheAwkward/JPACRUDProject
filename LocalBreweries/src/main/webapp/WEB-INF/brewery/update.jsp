@@ -1,44 +1,25 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Update a Brewery</title>
+<title>Update Brewery</title>
 </head>
 <body>
 
-<h1>Update a Brewery</h1>
 
-<c:choose>
-<c:when test="${! empty brewery}">
 
-<form action="updateBrewery.do" method="POST">
+<form action="updated.do" method="GET">
+<h1>Update Brewery By ID</h1>
 
-Update any of the fields for the Brewery:
-
-<br>
-
-<input type="hidden" name="id" value="${brewery.id}"/>
-Name: <input type="text" name="name" value="${brewery.name}"/>
-<br>
-City: <input type="text" name="city" value="${brewery.city}"/>
-State: <input type="text" name="state" value="${brewery.state}"/>
-URL: <input type="text" name="url" value="${brewery.url}"/>
-Latitude: <input type="text" name="latitude" value="${brewery.latitude}"/>
-Longitude: <input type="text" name="longitude" value="${brewery.longitude}"/>
+Brewery ID: <input type="text" name="id"/>
+<input type="submit" value="submit"/>
 
 
 </form>
-</c:when>
-<c:otherwise>
-Brewery Does not exist
-Please try again
-</c:otherwise>
 
 
-</c:choose>
 
 
 

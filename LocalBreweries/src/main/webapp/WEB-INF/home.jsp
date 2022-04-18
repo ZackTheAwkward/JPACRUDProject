@@ -14,9 +14,9 @@
 
 
 <a href="add.do">Add Brewery to List</a>
-<a href="updateBrewery.do">Update a Brewery</a>
-<a href="deleteBrewery.do">Delete a Brewery from the List</a>
-<a href="searchBrewery.do">Search for a Brewery by ID</a>
+<a href="update.do">Update a Brewery</a>
+<a href="delete.do">Delete a Brewery from the List</a>
+<a href="search.do">Search for a Brewery by ID</a>
 
 
 
@@ -26,10 +26,6 @@
 
 
 
-	<form action="getBrewery.do" method="GET">
-		Brewery ID: <input type="text" name="Id" /> <input type="submit"
-			value="Show Brewery" />
-	</form>
 
 
 
