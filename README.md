@@ -13,6 +13,8 @@ The goal for this project was to create a SQL database, create a JPA application
 - DriverManager
 - Gradle
 - HTML/CSS
+- Bootstrap
+- Google Web API
 - JSP
 - Git
 - Spring Controller
@@ -25,3 +27,6 @@ The goal for this project was to create a SQL database, create a JPA application
 
 ## Lessons Learned
 This project helped solidify my understanding of how to create a single table database using MySQL workbench. I am eager to learn how to create multiple tables with parent/child relationships next. This project also helped me better understand java servlet pages and how to implement them with mapping requests and redirect attributes.
+
+After completing the main object for this project, I really focused on learning a lot more about how to use bootstrap to implement a better user interface.
+A lot of my learning came from looking at example code and different methods for using bootstrap and CSS styling sheets. I'm most proud of my Google Web API implementation, by taking in a latitude and longitude data type, I was able to plug in those variables into the javascript code so each brewery showed it's correct location on the map.
